@@ -1,0 +1,59 @@
+body {
+  background: url('img/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+fieldset {
+  margin-top: 150px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.btnsub {
+  height: 50px;
+  width: 75%;
+}
+.btnsub:hover {
+  background-color: rgb(0, 255, 17);
+  color: white;
+}
+.btnsub1 {
+  height: 50px;
+  width: 75%;
+}
+.btnsub1:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+.contain {
+  border: 1px solid #4f4f4f;
+  background-color: rgba(79, 79, 79, 0.5);
+  height: 250px;
+  width: 100%;
+}
+.load {
+  height: 150px;
+  width: 50%;
+  margin-left: 50%;
+}
+.result {
+  margin-left: -5%;
+  margin-top: 18%;
+}
+.studinfo {
+  color: white;
+}
+label {
+  color: white;
+}
+legend {
+  color: white;
+}
+.grades {
+  color: white;
+}

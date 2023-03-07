@@ -12,15 +12,23 @@
     <title>responsive</title>
   </head>
   <body>
-    <div class="container-md ">
-      <fieldset>  
-        <legend class="text-center">GRADING SYSTEM</legend>
-
+    <div class="header">
+      <div class="container-md">
+        <img src="img/loa.png " class="rounded float-start logo" alt="..." />
+        <div class="row">
+          <div class="col"><div class="h1 text-center my-3 title">STUDENT GRADING SYSTEM</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-md">
+      <fieldset>
+        <legend class="text-center">GRADES AND INFO</legend>
+        <!-----------------------------------------------------------FORMS-------------------------------------------->
         <form onsubmit="return allfunct()" class="row g-2">
           <div class="row d-flex justify-content-center">
             <div class="col-auto">
-              <label for="inputEmail4"  class="form-label">STUDENT-ID</label>
-              <input type="number" class="form-control" placeholder="STUDENT-ID" id="STID"/>
+              <label for="inputEmail4" class="form-label">STUDENT-ID</label>
+              <input type="number" class="form-control" placeholder="STUDENT-ID" id="STID" required />
             </div>
           </div>
           <div class="h4 text-center studinfo">STUDENT-INFO</div>
@@ -28,24 +36,24 @@
           <div class="row d-flex justify-content-center py-1">
             <div class="col-auto">
               <label for="input-FN" class="form-label">First Name:</label>
-              <input type="text" class="form-control" placeholder="First-Name" id="input-FN" />
+              <input type="text" class="form-control" placeholder="First-Name" id="input-FN" required />
             </div>
             <div class="col-auto">
               <label for="inputMD" class="form-label">Middle-Name:</label>
-              <input type="text" class="form-control" placeholder="Middle-Name" id="inputMD" />
+              <input type="text" class="form-control" placeholder="Middle-Name" id="inputMD" required />
             </div>
 
             <div class="col-auto">
               <label for="inputLN" class="form-label">Last-Name:</label>
-              <input type="text" class="form-control" placeholder="Last-Name" id="inputLN" />
+              <input type="text" class="form-control" placeholder="Last-Name" id="inputLN" required />
             </div>
           </div>
 
           <div class="row d-flex justify-content-center">
             <div class="col-auto">
               <label for="inputcourse" class="form-label">COURSE</label>
-              <select id="input-course" class="form-select">
-                <option selected>Choose</option>
+              <select id="input-course" class="form-select" required>
+                <option value="0">Choose</option>
                 <option value="1">DICT</option>
                 <option value="2">Arts and Sciences.</option>
                 <option value="3">Criminal Justice.</option>
@@ -56,7 +64,7 @@
             <div class="col-auto">
               <label for="inputsub" class="form-label">SUBJECT</label>
               <select id="input-subject" class="form-select">
-                <option selected>Choose...</option>
+                <option value="0">Choose...</option>
                 <option value="1">Math</option>
                 <option value="2">English.</option>
                 <option value="3">Web Technology.</option>
@@ -68,127 +76,108 @@
           <hr />
 
           <div class="h4 my-md-1 grades text-center">GRADES</div>
-
-          <div class="row  ">
+          <div class="row d-flex justify-content-center">
             <div class="col-auto">
               <label class="form-label h5">Prelim</label>
-              <input type="number" class="form-control" id="input-prelim" />
+              <input type="number" class="form-control" id="input-prelim" required />
               <div class="row">
                 <div class="col-12">
                   <label class="form-label h5">Midterm</label>
-                  <input type="number" class="form-control" id="input-midterm" />
+                  <input type="number" class="form-control" id="input-midterm" required />
                 </div>
               </div>
-                
-            <div class="row ">
-              <div class="col-12 py-1">
-                <label class="form-label h5">Final</label>
-               <input type="number" class="form-control" id="input-final" />
-              </div> 
-           </div>
-                 
-            </div>
-          
-       <div class="col-md-8 mx-2 my-3  ">
-          <div class="container-fluid  contain">
-            <img src="img/load-unscreen.gif" id="load" class="rounded d-none mx-auto my-3 load" alt="..." />
-          
-            <h1 class=" text-light text-center text-result" id="text-result">RESULT</h1>
-              <div id="result" class="row text-center result  pop-up">
-                
-                <div class="row ">
-                  <div class="col-md-5">
-                    <div class="h5 text-start  text-light">student-ID:</div>
-                    </div>
-                    
-                    <div class="col-md-5"> 
-                      <div class=" text-bg-light"id="STID1">id</div>
-                    </div>
+
+              <div class="row">
+                <div class="col-12 py-1">
+                  <label class="form-label h5">Final</label>
+                  <input type="number" class="form-control" id="input-final" required />
                 </div>
-                <div class="row ">
-                  <div class="col-md-5">
-                    <div class="h5 text-start  text-light">Student-Name</div>
-                    </div>
-                    
-                    <div class="col-auto"> 
-                      <div class=" text-bg-light"id="STUD">ID</div>
-                    </div>
-                </div>
-                <div class="row ">
-                  <div class="col-md-5">
-                    <div class="h5 text-start  text-light">course:</div>
-                    </div>
-                    <div class="col-md-5"> 
-                      <div class=" text-bg-light"id="course">id</div>
-                    </div>
-                </div>  
-
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="h5 text-start  text-light">Subject:</div>
-                    </div>
-                    <div class="col-md-5"> 
-                      <div class=" text-bg-light"id="Subjectly">id</div>
-                    </div>
-                </div>  
-
-                <div class="row ">
-                  <div class="col-md-5">
-                    <div class="h5 text-start text-light">final Grades:</div>
-                    </div>
-                    <div class="col-md-5"> 
-                        <div class=" text-bg-light"id="final-grades">id</div>
-                      </div>
-  
-                </div>  
-                
-                <div class="row ">
-                  <div class="col-md-5 ">
-                    <div class="h5 text-start  text-light">grades remark:</div>
-                    </div>
-                    <div class="col-md-5"> 
-                      <div class=" text-bg-light"id="grades-remark">id</div>
-                    </div>
-                </div>  
-
-                 
-                <div class="row ">
-                  <div class="col-md-5">
-                    <div class="h5 text-start bottom-100 text-light">Equivalent Grades:</div>
-                    </div>
-                    <div class=" col-md-5"> 
-                      <div class="h5  text-bg-light"  id="equa">Equivalent</div></div>
-                </div> 
               </div>
-              
-       
-            
-             
-             
-             
-            
-        
             </div>
-           
+            <!-----------------------------------------------------------RESULTS-------------------------------------------->
+
+            <div class="col-md-8 mx-2 my-3">
+              <div class="container-md contain">
+                <img src="img/load-unscreen.gif" id="load" class="rounded mx-auto my-5 load" alt="..." />
+
+                <h1 class="text-dark my-5 text-center text-result" id="text-result">RESULT</h1>
+                <div id="result" class="row text-center result pop-up">
+                  <div class="row py-2">
+                    <div class="col-md-5">
+                      <div class="h5 text-start text-light">student-ID:</div>
+                    </div>
+
+                    <div class="col-md-5">
+                      <div class="h5 text-bg-light" id="STID1">id</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="h5 text-start text-light">Student Name</div>
+                    </div>
+                    <div class="col-auto py-2">
+                      <div class="h5 text-bg-light" id="STUD">ID</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="h5 text-start text-light">course:</div>
+                    </div>
+                    <div class="col-md-5 py-2">
+                      <div class="h5 text-bg-light" id="course">id</div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="h5 text-start text-light">Subject:</div>
+                    </div>
+                    <div class="col-md-5 py-2">
+                      <div class="h5 text-bg-light" id="Subjectly">id</div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="h5 text-start text-light">final Grades:</div>
+                    </div>
+                    <div class="col-md-5 py-2">
+                      <div class="h5 text-bg-light" id="final-grades">id</div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="h5 text-start text-light">grades remark:</div>
+                    </div>
+                    <div class="col-md-5 py-2">
+                      <div class="h5 text-bg-light" id="grades-remark">id</div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="h5 text-start bottom-100 text-light">Equivalent Grades:</div>
+                    </div>
+                    <div class="col-md-5 py-2">
+                      <div class="h5 text-bg-light" id="equa"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          
-       
-            <div class="row  d-flex justify-content-center ">
-
-              <div class="col-md-3 py-2 ">
-                <button type="submit" class="btn btn-outline-light text-center  btnsub">Submit</button>
-              </div>
-              <div class="col-md-3 py-2 ">
-                <button type="button" class="btn btn-outline-light btnsub1">Clear</button>
-              </div>
+          <div class="row py-3 d-flex justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
+              <button type="submit" id="submitted" class="btn btn-outline-light text-center btnsub">Submit</button>
             </div>
-         
-
-           
           </div>
-          <hr />
         </form>
-       
+        <div class="row py-3 d-flex justify-content-center">
+          <div class="col-md-6 d-flex justify-content-center">
+            <button type="submit" onclick="popreset()" id="resetly" class="btn btn-outline-light text-center btnsub1">Clear</button>
+          </div>
+        </div>
       </fieldset>
     </div>
 

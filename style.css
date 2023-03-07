@@ -13,13 +13,12 @@ fieldset {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
 }
 .header {
   border: 1px;
   background-color: rgb(11, 178, 184);
-  height: 100px;
+  height: 120px;
 }
 .logo {
   height: 100px;

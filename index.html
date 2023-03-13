@@ -27,8 +27,8 @@
         <form onsubmit="return allfunct()" class="row g-2">
           <div class="row d-flex justify-content-center">
             <div class="col-auto">
-              <label for="inputEmail4" class="form-label">STUDENT-ID</label>
-              <input type="number" class="form-control" placeholder="STUDENT-ID" id="STID" required />
+              <label for="inputEmail4" class="form-label">Student ID</label>
+              <input type="number" class="form-control" placeholder="Student ID" id="STID" required />
             </div>
           </div>
           <div class="h4 text-center studinfo">STUDENT-INFO</div>
@@ -36,16 +36,16 @@
           <div class="row d-flex justify-content-center py-1">
             <div class="col-auto">
               <label for="input-FN" class="form-label">First Name:</label>
-              <input type="text" class="form-control" pattern="[a-zA-Z\s]*" placeholder="First-Name" id="input-FN" required />
+              <input type="text" class="form-control" pattern="[a-zA-Z\s]*" placeholder="First Name" id="input-FN" required />
             </div>
             <div class="col-auto">
-              <label for="inputMD" class="form-label">Middle-Name:</label>
-              <input type="text" class="form-control" pattern="[a-zA-Z\s]*" placeholder="Middle-Name" id="inputMD" required />
+              <label for="inputMD" class="form-label">Middle Name:</label>
+              <input type="text" class="form-control" pattern="[a-zA-Z\s]*" placeholder="Middle Name" id="inputMD" required />
             </div>
 
             <div class="col-auto">
-              <label for="inputLN" class="form-label">Last-Name:</label>
-              <input type="text" class="form-control" placeholder="Last-Name" id="inputLN" pattern="[a-zA-Z\s]*" required />
+              <label for="inputLN" class="form-label">Last Name:</label>
+              <input type="text" class="form-control" placeholder="Last Name" id="inputLN" pattern="[a-zA-Z\s]*" required />
             </div>
           </div>
 
@@ -54,22 +54,22 @@
               <label for="inputcourse" class="form-label">COURSE</label>
               <select id="input-course" class="form-select" required>
                 <option value="0">Choose</option>
-                <option value="1">DICT</option>
-                <option value="2">Arts and Sciences.</option>
-                <option value="3">Criminal Justice.</option>
-                <option value="4">Education.</option>
-                <option value="5">BS in Nursing.</option>
+                <option value="1">BSIT</option>
+                <option value="2">DICT</option>
+                <option value="3">BSCPE</option>
+                <option value="4">ACT</option>
+                <option value="5">BSCS</option>
               </select>
             </div>
             <div class="col-auto">
               <label for="inputsub" class="form-label">SUBJECT</label>
               <select id="input-subject" class="form-select">
                 <option value="0">Choose...</option>
-                <option value="1">Math</option>
-                <option value="2">English.</option>
-                <option value="3">Web Technology.</option>
-                <option value="4">Foreign Language.</option>
-                <option value="5">Networking.</option>
+                <option value="1">Web System & Technologies</option>
+                <option value="2">RDBMS</option>
+                <option value="3">Data Structure</option>
+                <option value="4">Foreign Language</option>
+                <option value="5">Networking</option>
               </select>
             </div>
           </div>
@@ -104,7 +104,7 @@
                 <div id="result" class="row text-center result pop-up">
                   <div class="row py-2">
                     <div class="col-md-5">
-                      <div class="h5 text-start text-light">student-ID:</div>
+                      <div class="h5 text-start text-light">Student ID:</div>
                     </div>
 
                     <div class="col-md-5">
@@ -113,7 +113,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md-5">
-                      <div class="h5 text-start text-light">Student Name</div>
+                      <div class="h5 text-start text-light">Student Name:</div>
                     </div>
                     <div class="col-md-6 py-2">
                       <div class="h5 text-bg-light text-center" id="STUD">ID</div>
@@ -121,7 +121,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md-5">
-                      <div class="h5 text-start text-light">course:</div>
+                      <div class="h5 text-start text-light">Course:</div>
                     </div>
                     <div class="col-md-5 py-2">
                       <div class="h5 text-bg-light" id="course">id</div>
@@ -139,7 +139,7 @@
 
                   <div class="row">
                     <div class="col-md-5">
-                      <div class="h5 text-start text-light">final Grades:</div>
+                      <div class="h5 text-start text-light">Final Grades:</div>
                     </div>
                     <div class="col-md-5 py-2">
                       <div class="h5 text-bg-light" id="final-grades">id</div>
@@ -148,7 +148,7 @@
 
                   <div class="row">
                     <div class="col-md-5">
-                      <div class="h5 text-start text-light">grades remark:</div>
+                      <div class="h5 text-start text-light">Grades Remark:</div>
                     </div>
                     <div class="col-md-5 py-2">
                       <div class="h5 text-bg-light" id="grades-remark">id</div>
